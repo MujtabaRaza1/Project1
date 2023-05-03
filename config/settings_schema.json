@@ -7,14 +7,15 @@
     "theme_documentation_url": "https://github.com/Shopify/themekit",
     "theme_support_url": "https://github.com/Shopify/themekit/issues"
   },
+  {
+    "name" : "Colors",
+    "settings" : [
       {
-        "name" : "Colors",
-        "settings" : [
-          {
-        "id" : "link_color",
-        "label" : "Link COlor",
-        "default" : "#000"
-          }
-        ]
+      "type" : "color",
+      "id" : "link_color",
+      "label" : "Link COlor",
+      "default" : "#000"
       }
+    ]
+  }
 ]
