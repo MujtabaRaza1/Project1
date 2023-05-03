@@ -2,6 +2,8 @@
 {{ collection.title }}
 <ul>
 {% for product in collection.products %}
+        {% unless section.settings.show_soldout != false 
+            and product.available != true %}
   <li>
     <a style="color:{{ settings.link_color }}" href="{{ product.url }}">{{ product.title }} - 
     {{ product.price | money }}
@@ -10,6 +12,7 @@
     {% endif %}
     </a>
   </li>
+  {% endunless %}
   
 {% endfor %}
 </ul>
