@@ -1,2 +1,6 @@
 {% assign collection = collections['featured-collection'] %}
 {{ collection.title }}
+
+{% for product in collection.products %}
+  <li>{{ product }}</li>
+{% endfor %}
