@@ -2,5 +2,8 @@
 {{ collection.title }}
 
 {% for product in collection.products %}
-  <li>{{ product.title }} - {{ product.price | money }}</li>
+  <li>
+  <a href="{{ product.url }}">{{ product.title }} - 
+  {{ product.price | money }}</li>
+  </a>
 {% endfor %}
